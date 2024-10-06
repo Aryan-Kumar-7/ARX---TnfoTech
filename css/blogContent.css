@@ -1,0 +1,264 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*** Spinner Start ***/
+
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+ }
+
+ #spinner.show {
+     transition: opacity .8s ease-out, visibility 0s linear .0s;
+     visibility: visible;
+     opacity: 1;
+ }
+
+/*** Spinner End ***/
+
+
+/*** Button Start ***/
+.btn {
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-md-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-lg-square {
+    width: 58px;
+    height: 58px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.back-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+
+/*** Button End ***/
+
+
+/*** Topbar Start ***/
+
+.topbar .top-info {
+    letter-spacing: 1px;
+}
+
+.topbar .top-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar .top-link a {
+    margin-right: 10px;
+}
+
+#note {
+    width: 500px;
+    overflow: hidden;
+}
+
+#note small {
+    position: relative;
+    display: inline-block;
+    animation: mymove 5s infinite;
+    animation-timing-function: all;
+}
+
+@keyframes mymove {
+    from {left: -100%;}
+    to {left: 100%;}
+}
+
+/*** Topbar End ***/
+
+/*** Navbar Start ***/
+
+.navbar .navbar-nav {
+    padding: 15px 0;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 10px;
+    color: var(--bs-white);
+    font-size: 18px;
+    outline: none;
+    
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--bs-secondary) !important;
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "font awesome 5 free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        visibility: hidden;
+        top: 100%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        transition: .5s;
+        opacity: 0;
+    }
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    transition: .5s;
+    opacity: 1;
+}
+
+/*** Navbar End ***/
+
+.blog-content {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background: #0575E6;
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+    background: linear-gradient(to right, #021B79, #0575E6);
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    margin-top: 2px;
+}
+
+.leftB {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rightB img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.rightB img:hover {
+    transform: scale(1.05);
+}
+
+.text-content{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-top: 50px;
+    padding-bottom: 60px;
+}
+
+.para{
+    width: 800px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 15px;
+    /* background-color: #007BFF; */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+.share {
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.share p {
+    margin: 0;
+    font-size: 1rem; 
+    font-weight: 600;
+    color: #333;
+}
+
+.share-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.share-icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #007BFF; 
+    color: white; 
+    font-size: 20px; 
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.share-icon i:hover {
+    background-color: #0056b3;
+}
