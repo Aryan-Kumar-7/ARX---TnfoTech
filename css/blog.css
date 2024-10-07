@@ -369,6 +369,16 @@
     color: #007BFF; 
 }
 
+.service-link h4 {
+    /* color: inherit; */
+    transition: color 0.3s ease;
+}
+
+.service-link:focus h4,
+.service-link:active h4 {
+    color: #007BFF; 
+}
+
 .read-more-button {
     display: inline-block;
     padding: 10px 20px;
