@@ -176,6 +176,22 @@
     overflow-y: scroll;
     scrollbar-width: none;
 }
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 10px;
+    position: absolute; /* Position it as per your layout */
+}
+
+.line {
+    width: 30px; 
+    height: 3px;
+    background-color: SlateBlue;
+    margin: 3px 0;
+}
+
 .side-content{
     margin-left: 20px;
 }
@@ -212,23 +228,39 @@
 }
 
 @media (max-width: 1200px) {
+    .mainContainer{
+        gap: 60px;
+    }
+
     .sidebar {
         width: 30%;
     }
 }
 
 @media (max-width: 992px) {
-    .sidebar {
-        width: 40%;
+    .mainContainer{
+        gap: 55px;
     }
-}
 
-@media (max-width: 768px) {
     .sidebar {
         width: 50%;
     }
 }
-@media (max-width: 576px) {
+
+@media (max-width: 768px) {
+    .mainContainer{
+        gap: 40px;
+    }
+
+    .sidebar {
+        width: 50%;
+    }
+}
+@media (max-width: 580px) {
+    .mainContainer{
+        gap: 20px;
+    }
+
     .sidebar {
         width: 100%;
         position: absolute;
@@ -240,8 +272,21 @@
         transform: translateX(-100%);
     }
 
+    .toggle-button {
+        display: flex; /* Show toggle button on small screens */
+        right: 10px;
+    }
+
     .sidebar.active {
         transform: translateX(0);
+    }
+
+}
+
+@media (max-width: 480px) {
+    
+    .toggle-button {
+        display: flex; /* Ensure toggle button is shown */
     }
 }
 
@@ -377,6 +422,21 @@
 @media (max-width: 850px) {
     .content {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 580px) {
+    .sidebar-right {
+        width: 100%;
+        padding-left: 10px;  /* Adjust padding as needed */
+        padding-right: 10px; /* Adjust padding as needed */
+        border-left: none; /* Remove border when full width */
+        box-shadow: none; /* Optionally remove box-shadow */
+    }
+
+    .content {
+        grid-template-columns: 1fr; /* Stack content in one column */
+        gap: 15px; /* Adjust gap between items */
     }
 }
 
