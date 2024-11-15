@@ -108,9 +108,56 @@
     </div>
     <!-- Navbar End -->
 
+    <!-- Header Section start -->
+
+    <div class="it">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="./img/5223113-hd_3840_2160_30fps.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <p class="">ARX InfoTech</p>
+            <p>Redefining Technology, Driving Innovation – ARX Infotech delivers cutting-edge IT solutions tailored to
+                transform businesses. Partner with us for seamless digital success.</p>
+            <button id="openFormBtn">Let's get started <span
+                    style='font-size:18px; padding-left: 5px;'>&#8599;</span></button>
+        </div>
+    </div>
+
+    <!-- Popup Form (Initially hidden) -->
+    <div id="popupForm" class="popup-form">
+        <div class="popup-content">
+            <span class="close-btn" id="closeFormBtn">&times;</span>
+            <div class="popup-inner">
+                <!-- Image inside popup -->
+                <div class="popup-image">
+                    <img src="./img/pexels-cottonbro-5083396.jpg" alt="Popup Image">
+                </div>
+
+                <!-- Content inside popup -->
+                <div class="popup-text">
+                    <h2>Sign Up for IT Services</h2>
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Section end -->
+
     <!-- About Start -->
     <div class="container-fluid py-5 my-5">
-        <div class="container pt-5">
+        <div class="container pt-4">
             <div class="row g-5">
                 <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
                     <div class="h-100 position-relative">
@@ -257,7 +304,8 @@
                                 <p class="mb-4">Empowering businesses through seamless IT solutions: innovation,
                                     reliability, and excellence paving the path to digital transformation and success.
                                 </p>
-                                <a href="blog.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill" id="read" data-category="IT">Read
+                                <a href="blog.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill"
+                                    id="read" data-category="IT">Read
                                     More</a>
                             </div>
                         </div>
@@ -275,7 +323,8 @@
                                 <h4 class="mb-3">R&D SERVICE</h4>
                                 <p class="mb-4">Innovation is our passion, R&D is our expertise. Together, we shape the
                                     future through relentless curiosity and groundbreaking solutions.</p>
-                                <a href="blog.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill" id="read" data-category="R&D">Read
+                                <a href="blog.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill"
+                                    id="read" data-category="R&D">Read
                                     More</a>
                             </div>
                         </div>
@@ -296,7 +345,8 @@
                                 <p class="mb-4">Innovative solutions crafted with precision. Transforming ideas into
                                     products. Your vision, our expertise. Empowering progress through product
                                     development.</p>
-                                <a href="blog.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill" id="read" data-category="PD">Read
+                                <a href="blog.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill"
+                                    id="read" data-category="PD">Read
                                     More</a>
                             </div>
                         </div>
@@ -315,7 +365,8 @@
                                 <p class="mb-4">Providing innovative and secure financial solutions through advanced
                                     technology, enhancing efficiency, accuracy, and customer satisfaction in financial
                                     services.</p>
-                                <a href="blog.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill" id="read" data-category="FS">Read
+                                <a href="blog.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill"
+                                    id="read" data-category="FS">Read
                                     More</a>
                             </div>
 
@@ -334,7 +385,8 @@
                                 <h4 class="mb-3">M2C SERVICE</h4>
                                 <p class="mb-4">Empowering consumers with seamless experiences, we deliver M2C services
                                     that redefine convenience, trust, and satisfaction at every interaction.</p>
-                                <a href="blog.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill" id="read" data-category="M2C">Read
+                                <a href="blog.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill"
+                                    id="read" data-category="M2C">Read
                                     More</a>
                             </div>
                         </div>
@@ -352,7 +404,8 @@
                                 <h4 class="mb-3">INDUSTRIAL TRAINING</h4>
                                 <p class="mb-4">Elevate your skills with our Industrial Training : bridging knowledge
                                     and experience for professional growth and success.</p>
-                                <a href="blog.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill" id="read" data-category="IDT">Read
+                                <a href="blog.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill"
+                                    id="read" data-category="IDT">Read
                                     More</a>
                             </div>
                         </div>
@@ -650,6 +703,33 @@
                 });
             });
         });
+    </script>
+
+    <script>
+        // Slow the video playback to 50% of the original speed
+        document.querySelector('video').playbackRate = 0.5;
+
+
+        var popupForm = document.getElementById("popupForm");
+        var openFormBtn = document.getElementById("openFormBtn");
+        var closeFormBtn = document.getElementById("closeFormBtn");
+
+        // Open the popup when the "Let's get started" button is clicked
+        openFormBtn.onclick = function () {
+            popupForm.style.display = "block";
+        }
+
+        // Close the popup when the "X" button is clicked
+        closeFormBtn.onclick = function () {
+            popupForm.style.display = "none";
+        }
+
+        // Close the popup if the user clicks anywhere outside of the form
+        window.onclick = function (event) {
+            if (event.target === popupForm) {
+                popupForm.style.display = "none";
+            }
+        }
     </script>
 
 </body>

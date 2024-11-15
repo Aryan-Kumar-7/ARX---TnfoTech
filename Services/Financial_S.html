@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ARX InfoTech - IT Service & Consulting.</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style2.css">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark py-2 d-none d-md-flex">
+        <div class="container">
+            <div class="d-flex justify-content-between topbar">
+                <div class="top-info">
+                    <small class="me-3 text-white-50"><a href="#"><i
+                                class="fas fa-map-marker-alt me-2 text-secondary"></i></a>Kolkata, WB, India.</small>
+                    <small class="me-3 text-white-50"><a href="#"><i
+                                class="fas fa-envelope me-2 text-secondary"></i></a>info.arxinfotech@gmail.com</small>
+                </div>
+                <div id="note" class="text-secondary d-none d-xl-flex"><small>Note : We help you to Grow your
+                        Business</small></div>
+                <div class="top-link">
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i
+                            class="fab fa-facebook-f text-primary"></i></a>
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i
+                            class="fab fa-twitter text-primary"></i></a>
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle"><i
+                            class="fab fa-instagram text-primary"></i></a>
+                    <a href="" class="bg-light nav-fill btn btn-sm-square rounded-circle me-0"><i
+                            class="fab fa-linkedin-in text-primary"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-lg py-0">
+                <a href="index.html" class="navbar-brand">
+                    <img src="/img/ARXInfotech(1).jpeg" width="300">
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto mx-xl-auto p-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link active">Services</a>
+                        <a href="project.html" class="nav-item nav-link">Projects</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+                <div class="d-none d-xl-flex flex-shirink-0">
+                    <div id="phone-tada" class="d-flex align-items-center justify-content-center me-4">
+                        <a href="" class="position-relative animated tada infinite">
+                            <i class="fa fa-phone-alt text-white fa-2x"></i>
+                            <div class="position-absolute" style="top: -7px; left: 20px;">
+                                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column pe-4 border-end">
+                        <span class="text-white-50">Have any questions?</span>
+                        <span class="text-secondary">Call: +91 8317818107</span>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center ms-4 ">
+                        <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Services Start -->
+
+    <div class="it">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="./img/18743334-hd_1920_1080_60fps.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <p class="">Financial Services</p>
+            <p>Providing innovative and secure financial solutions through advanced technology, enhancing efficiency, accuracy, and customer satisfaction in financial services.</p>
+            <button id="openFormBtn">Let's get started <span style='font-size:18px; padding-left: 5px;'>&#8599;</span></button>
+        </div>
+    </div>
+
+    <!-- Popup Form (Initially hidden) -->
+    <div id="popupForm" class="popup-form">
+        <div class="popup-content">
+            <span class="close-btn" id="closeFormBtn">&times;</span>
+            <div class="popup-inner">
+                <!-- Image inside popup -->
+                <div class="popup-image">
+                    <img src="./img/image1.png" alt="Popup Image">
+                </div>
+
+                <!-- Content inside popup -->
+                <div class="popup-text">
+                    <h2>Sign Up for Financial Services</h2>
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content2">
+        <h4>Comprehensive Financial Services for Optimized Growth and Strategic Innovation</h4>
+        <div class="inner">
+            <div class="left">
+                <img src="./img/image9.png" alt="">
+            </div>  
+            <div class="right">
+                <div class="para">
+                    <p><i class="fa-solid fa-circle-check"></i> We offer personalized financial planning to help you achieve your goals, from budgeting to wealth management.</p>
+                    <p><i class="fa-solid fa-circle-check"></i> Our expert team helps optimize your investment portfolio with strategies tailored to your financial objectives.</p>
+                    <p><i class="fa-solid fa-circle-check"></i> We assist businesses with capital raising, mergers, acquisitions, and financial restructuring to foster growth.</p>
+                    <p><i class="fa-solid fa-circle-check"></i> We provide customized insurance and risk management strategies to protect your assets and minimize financial risks.</p>
+                    <p><i class="fa-solid fa-circle-check"></i> Our accounting and tax experts ensure accurate financial reporting and help reduce tax liabilities while ensuring compliance.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="service1">
+            <h4 class="hed">Services Portfolio for Financial Services</h4>
+            <div class="nav">
+                <p class="active" id="webDevNav" onclick="showSection('webNav')">Financial Trainings</p>
+                <p id="appDevNav" onclick="showSection('appNav')">Stock Recommendation</p>
+                <p id="toolDevNav" onclick="showSection('toolNav')">FLL & DLL Positions</p>
+                <p id="aiDevNav" onclick="showSection('aiNav')">Trading Calls</p>
+                <p id="bigDataDevNav" onclick="showSection('bigDataNav')">Financial Planning</p>
+                <p id="dataResearchDevNav" onclick="showSection('dataResearchNav')">Walth Consultation</p>
+            </div>
+        
+            <div id="webNav" class="icont">
+                <div class="left">
+                    <img src="./img/image10.png" alt="Web Development" id="contentImage">
+                </div>
+                <div class="right" id="contentText">
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Personal Financial Management</h4>
+                        <p>Master the art of managing your finances effectively with our Personal Financial Management training. Learn to create budgets, manage expenses, and build savings for future goals. Gain insights into debt management, credit scores, and investment basics.</p>
+                    </div>
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Corporate Financial Strategies</h4>
+                        <p>Elevate your corporate financial knowledge with our specialized training in Corporate Financial Strategies. Explore cash flow management, financial planning, and risk analysis to optimize business profitability. Learn the essentials of financial reporting and compliance.</p>
+                    </div>
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Investment and Wealth Building</h4>
+                        <p>Dive into the world of investments and wealth creation. This training covers stock market basics, mutual funds, and other investment instruments. Understand risk assessment and portfolio diversification to achieve financial stability and growth.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="appNav" class="icont" style="display: none;">
+                <div class="left">
+                    <img src="./img/image11.png" alt="app Development" id="contentImage">
+                </div>
+                <div class="right" id="contentText">
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Expert Insights for Smarter Investments</h4>
+                        <p>Leverage our expert stock recommendations to make informed investment decisions. Our analysis considers market trends, company performance, and future growth potential to suggest the best opportunities. Stay ahead in the stock market with precise and reliable advice.</p>
+                    </div>
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Tailored Stock Picks for Every Investor</h4>
+                        <p>Whether you're a beginner or a seasoned investor, our personalized stock recommendations cater to your financial goals. From high-growth tech stocks to steady dividend-paying companies, we guide you toward the right investment choices.</p>
+                    </div>
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Data-Driven Stock Recommendations</h4>
+                        <p>Empower your portfolio with data-driven stock insights. Our advanced tools analyze historical performance, technical indicators, and economic factors to provide accurate stock recommendations. Make confident decisions backed by robust analysis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="toolNav" class="icont" style="display: none;">
+                <div class="left">
+                    <img src="./img/image12.png" alt="Tool Development" id="contentImage">
+                </div>
+                <div class="right" id="contentText">
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Strategic Insights into FLL & DLL Positions</h4>
+                        <p>Understand the dynamics of Foreign and Domestic Long-Term Loans to optimize your financial strategies. We provide detailed guidance on FLL and DLL positions, helping businesses leverage them for sustainable growth and stability.</p>
+                    </div>
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Managing FLL & DLL for Financial Success</h4>
+                        <p>Explore effective approaches to managing Foreign and Domestic Long-Term Loans. Our services focus on helping businesses maintain balance, reduce risk, and enhance their financial health through strategic loan management.</p>
+                    </div>
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Optimize Funding with FLL & DLL Expertise</h4>
+                        <p>Achieve your financial objectives by leveraging our expertise in FLL and DLL positions. We offer insights into securing and managing loans, ensuring your business thrives in a competitive environment.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="aiNav" class="icont" style="display: none;">
+                <div class="left">
+                    <img src="./img/image13.png" alt="artificial intelligence" id="contentImage">
+                </div>
+                <div class="right" id="contentText">
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Real-Time Trading Calls for Strategic Market Moves</h4>
+                        <p>In today’s fast-paced financial markets, timing is everything. Our real-time trading calls provide precise recommendations for buying, selling, or holding assets, ensuring you stay ahead of market fluctuations. Backed by in-depth research and expert analysis, these calls are designed to enhance your trading strategies and maximize profitability while minimizing risks.</p>
+                    </div>
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Expert Insights for Consistent Trading Success</h4>
+                        <p>Achieve consistent growth in your trading portfolio with our expert trading calls. Whether you’re an intraday trader or prefer long-term positional strategies, our recommendations are tailored to meet diverse trading needs. Each call includes detailed analysis, clear entry and exit points, and risk management techniques to help you make well-informed decisions.</p>
+                    </div>
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Actionable Trading Calls for Every Market Opportunity</h4>
+                        <p>Capitalize on market opportunities with our actionable trading calls. From equities to forex, we deliver timely updates and insights that empower you to take advantage of market trends. With a focus on accuracy and reliability, our calls are your guide to making confident and profitable trades in volatile market conditions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bigDataNav" class="icont" style="display: none;">
+                <div class="left">
+                    <img src="./img/image14.png" alt="big data analytic" id="contentImage">
+                </div>
+                <div class="right" id="contentText">
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Comprehensive Financial Planning for a Secure Future</h4>
+                        <p>Effective financial planning is the cornerstone of achieving long-term goals. We provide tailored strategies to help you manage your income, expenses, and investments efficiently. Our services focus on building a secure financial foundation, ensuring you’re prepared for both expected milestones and unforeseen challenges.</p>
+                    </div>
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Personalized Solutions for Wealth Growth and Preservation</h4>
+                        <p>Financial planning isn’t one-size-fits-all. We offer personalized solutions that align with your unique needs and aspirations. From retirement planning to wealth preservation, our experts create actionable roadmaps to help you achieve financial independence while safeguarding your assets.</p>
+                    </div>
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Strategic Guidance for Achieving Life Goals</h4>
+                        <p>Turn your dreams into reality with strategic financial planning. Our approach integrates budgeting, savings, and investment planning to ensure you stay on track toward life goals like home ownership, education funding, and a comfortable retirement. With our guidance, you’ll enjoy peace of mind knowing your financial future is secure.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="dataResearchNav" class="icont" style="display: none;">
+                <div class="left">
+                    <img src="./img/image15.png" alt="data research" id="contentImage">
+                </div>
+                <div class="right" id="contentText">
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Expert Wealth Consultation for Sustained Financial Growth</h4>
+                        <p>Our wealth consultation services are designed to optimize your financial resources and create sustainable growth. By analyzing your current assets and investment strategies, we offer actionable insights to maximize returns and build a robust financial portfolio tailored to your goals.</p>
+                    </div>
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Personalized Wealth Strategies for High-Net-Worth Individuals</h4>
+                        <p>Every individual has unique financial aspirations, and our wealth consultation services are crafted to align with your specific needs. From asset allocation to risk management, we provide comprehensive strategies that ensure your wealth is preserved and grows steadily over time.</p>
+                    </div>
+                    <div>
+                        <h4><i class="fa-solid fa-circle-check"></i>Comprehensive Insights for Effective Wealth Management</h4>
+                        <p>Managing wealth effectively requires expert guidance and strategic foresight. Our consultation services focus on creating balanced solutions that encompass investments, tax planning, and estate management. Let us help you build, protect, and transition your wealth seamlessly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="part">
+            <h2>Our Partners</h2>
+            <div class="img2">
+                <img src="./img/ms.png" alt="">
+                <img src="./img/aws.png" alt="">
+                <img src="./img/or.png" alt="">
+                <img src="./img/g.png" alt="">
+            </div>
+        </div>
+
+
+        <div class="dis">
+            <h2>Discover More</h2>
+            <div class="ser">
+                <div class="ser1">
+                    <div>
+                        <img src="./img/r&d.png" alt="">
+                    </div>
+                    <div>
+                        <p>R&D SERVICE</p>
+                        <p>Innovation is our passion, R&D is our expertise. Together, we shape the future through relentless curiosity and groundbreaking solutions.</p>
+                        <button><a href="">Read More</a> <span style='font-size:18px; padding-left: 5px;'>&#8599;</span></button>
+                    </div>
+                </div>
+                <div class="ser1">
+                    <div>
+                        <img src="./img/pd.png" alt="">
+                    </div>
+                    <div>
+                        <p>Product Development</p>
+                        <p>Innovative solutions crafted with precision. Transforming ideas into products. Your vision, our expertise. Empowering progress through product development.</p>
+                        <button><a href="">Read More</a> <span style='font-size:18px; padding-left: 5px;'>&#8599;</span></button>
+                    </div>
+                </div>
+                <div class="ser1">
+                    <div>
+                        <img src="./img/fi.png" alt="">
+                    </div>
+                    <div>
+                        <p>IT SERVICES</p>
+                        <p>Empowering businesses through seamless IT solutions: innovation, reliability, and excellence paving the path to digital transformation and success.</p>
+                        <button><a href="./IT_SERVICES.html">Read More</a> <span style='font-size:18px; padding-left: 5px;'>&#8599;</span></button>
+                    </div>
+                </div>
+                <div class="ser1">
+                    <div>
+                        <img src="./img/m2c.png" alt="">
+                    </div>
+                    <div>
+                        <p>M2C SERVICE</p>
+                        <p>Empowering consumers with seamless experiences, we deliver M2C services that redefine convenience, trust, and satisfaction at every interaction.</p>
+                        <button><a href="">Read More</a> <span style='font-size:18px; padding-left: 5px;'>&#8599;</span></button>
+                    </div>
+                </div>
+                <div class="ser1">
+                    <div>
+                        <img src="./img/idt.png" alt="">
+                    </div>
+                    <div>
+                        <p>INDUSTRIAL TRAINING</p>
+                        <p>Elevate your skills with our Industrial Training : bridging knowledge and experience for professional growth and success.</p>
+                        <button><a href="">Read More</a> <span style='font-size:18px; padding-left: 5px;'>&#8599;</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="part">
+            <h2>Brand That Trust Us</h2>
+            <div class="img2">
+                <img src="./img/ms.png" alt="">
+                <img src="./img/aws.png" alt="">
+                <img src="./img/or.png" alt="">
+                <img src="./img/g.png" alt="">
+            </div>
+        </div>
+
+        <div class="last">
+            <div class="con">
+                <h2>We’d love to hear from you!</h2>
+                <p>Contact us for your fintech requirements or any other queries</p>
+                <button><a href="../contact.html">Talk To Us</a> <span style='font-size:18px; padding-left: 5px;'>&#8599;</span></button>
+            </div>
+        </div>
+        
+    </div>
+    
+
+
+    <!-- Services End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
+        <div class="container pt-5 pb-4">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <a href="index.html">
+                        <img src="/img/ARXInfotech(1).jpeg" width="200">
+                    </a>
+                    <p class="mt-4 text-light">"ARX Infotech: Your gateway to innovative IT solutions and cutting-edge
+                        development, propelling businesses forward with seamless technology integration and excellence."
+                    </p>
+                    <div class="d-flex hightech-link">
+                        <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i
+                                class="fab fa-facebook-f text-primary"></i></a>
+                        <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i
+                                class="fab fa-twitter text-primary"></i></a>
+                        <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i
+                                class="fab fa-instagram text-primary"></i></a>
+                        <a href="" class="btn-light nav-fill btn btn-square rounded-circle me-0"><i
+                                class="fab fa-linkedin-in text-primary"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Short Link</a>
+                    <div class="mt-4 d-flex flex-column short-link">
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>About
+                            us</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact
+                            us</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our
+                            Services</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our
+                            Projects</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Latest
+                            Blog</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Help Link</a>
+                    <div class="mt-4 d-flex flex-column help-link">
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms
+                            Of use</a>
+                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy
+                            Policy</a>
+                        <a href="" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
+                        <a href="" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
+                        <a href="" class="mb-2 text-white"><i
+                                class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <a href="#" class="h3 text-secondary">Contact Us</a>
+                    <div class="text-white mt-4 d-flex flex-column contact-link">
+                        <a href="#" class="pb-3 text-light border-bottom border-primary"><i
+                                class="fas fa-map-marker-alt text-secondary me-2"></i> Kolkata, WB, India.</a>
+                        <a href="#" class="py-3 text-light border-bottom border-primary"><i
+                                class="fas fa-phone-alt text-secondary me-2"></i> +91 8317818107</a>
+                        <a href="#" class="py-3 text-light border-bottom border-primary"><i
+                                class="fas fa-envelope text-secondary me-2"></i> info.arxinfotech@gmail.con</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="text-light mt-5 mb-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span class="text-light"><a href="#" class="text-secondary"><i
+                                class="fas fa-copyright text-secondary me-2"></i>ARX InfoTech</a>, All right
+                        reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i
+            class="fa fa-arrow-up text-white"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/38f8533cd0.js" crossorigin="anonymous"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
